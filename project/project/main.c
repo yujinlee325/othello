@@ -19,27 +19,27 @@ int main(){
             for(j=0;j<N;j++)
             {
                 if(i == 0 && 1 <= j <= N-2)
-                    arr[i][j] = "";
+                    arr[i][j] = "┬";
                 else if (i == 0 && j == 0)
-                    arr[i][j] = "";
+                    arr[i][j] = "┌";
                 else if (i == 0 && j == N-1)
-                    arr[i][j] = "";
+                    arr[i][j] = "┐";
                 else if(1 <= i <= 6 && j == 0)
-                    arr[i][j] = "" ;
+                    arr[i][j] = "├" ;
                 else if (i == N-1 && j == 0)
-                    arr[i][j] = "";
+                    arr[i][j] = "└";
                 else if (i == N-1 && 1 <= j <= N-2)
-                    arr[i][j] = "";
+                    arr[i][j] = "┴";
                 else if (i == N-1 && j == N-1)
-                    arr[i][j] = "";
+                    arr[i][j] = "┘";
                 else if (1 <= i <= N-2 && j == N-1)
-                    arr[i][j] = "";
+                    arr[i][j] = "┤";
                 else if((i == N/2-1 && j == N/2-1) || (i == N/2 && j == N/2))
                     arr[i][j] = "○" ;
                 else if ((i == N/2-1 && j == N/2) || (i == N/2 && j == N/2-1))
                     arr[i][j] = "●";
                 else
-                    arr[i][j] = "";
+                    arr[i][j] = "┼";
             }
     }
     
