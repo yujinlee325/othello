@@ -31,7 +31,7 @@ void init_othello(){
                   gameboard[i][j] = "┘";
                 else if (1 <= i <= N-2 && j == N-1)
                   gameboard[i][j] = "┤";
-                else if((i == N/2-1 && j == N/2-1) || (i == N/2 && j == N/2)) //초기 말 배치
+                else if((i == N/2-1 && j == N/2-1) || (i == N/2 && j == N/2)) //초기 알 배치
                     gameboard[i][j] = "○" ;
                 else if ((i == N/2-1 && j == N/2) || (i == N/2 && j == N/2-1))
                     gameboard[i][j] = "●";
