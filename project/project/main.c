@@ -44,15 +44,15 @@ void print_othello(){
     int i,j;
     char anbr[26] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     
-    printf(" ");
+    printf(" "); // 행 번호가 알맞은 위치에 출력되도록 빈칸 출력
     
     for(i=1;i<N+1;i++)
-        printf("%d", i);
+        printf("%d", i); // 열 번호 출력
     printf("\n");
     
     for(i=0;i<N;i++)
     {
-            printf("%c", anbr[i]);
+            printf("%c", anbr[i]); // 행 번호 출력
         
         for(j=0;j<N;j++)
             printf("%s", gameboard[i][j]);
